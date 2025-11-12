@@ -2,6 +2,7 @@ import tkinter as tk
 from tkinter import filedialog, messagebox
 import os
 import BAM_szimbolumok as bam
+from datetime import datetime
 
 class BAMApp:
     def __init__(self, root):
@@ -65,6 +66,7 @@ class BAMApp:
                 with open(file_name, "w", encoding="utf-8") as f:
                     f.write("Szimbólum Rajzoló\n")
                     f.write(f"Mentett szimbólum: {self.current_shape}\n")
+                    f.write(f"Mentés ideje: {datetime.now().strftime('%Y-%m-%d %H:%M')}\n")
                 messagebox.showinfo("Mentve", f"Leírás elmentve ide:\n{file_name}")
 
             else:
