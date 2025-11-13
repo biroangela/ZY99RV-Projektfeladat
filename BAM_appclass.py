@@ -22,7 +22,7 @@ class BAMApp:
         tk.Button(self.root, text="Kocka", command=lambda: self.bam_draw_shape("Kocka")).pack(side="left", padx=5, pady=10)
         tk.Button(self.root, text="Szív", command=lambda: self.bam_draw_shape("Szív")).pack(side="left", padx=5, pady=10)
         tk.Button(self.root, text="Rombusz", command=lambda: self.bam_draw_shape("Rombusz")).pack(side="left", padx=5, pady=10)
-        tk.Button(self.root, text="Háromszög", command=lambda: self.bam_draw_shape("HáromszÖg")).pack(side="left", padx=5, pady=10)
+        tk.Button(self.root, text="Háromszög", command=lambda: self.bam_draw_shape("Háromszög")).pack(side="left", padx=5, pady=10)
 
     def bam_draw_shape(self, shape):
         self.current_shape = shape
